@@ -1,0 +1,14 @@
+float x,y,px,py;
+float easing = 0.1;
+
+void setup(){
+  size(1000,120);
+}
+
+void draw(){
+  float targetX=mouseX;
+  float targetY=mouseY;
+  x+=(targetX-x)*easing;
+  y+=(targetY-y)*easing;
+  ellipse(x,y,12,12);
+}
