@@ -1,0 +1,11 @@
+void setup(){
+  size(2560,1440);
+  strokeWeight(30);
+}
+
+void draw(){
+  background(#FF0000);
+  if(mousePressed==true){
+    background(#0017FF);
+  }
+}
