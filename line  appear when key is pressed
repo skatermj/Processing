@@ -1,0 +1,13 @@
+void setup(){
+  size(240,120);
+}
+
+void draw(){
+  background(204);
+    if (keyPressed){
+      line(20,20,220,100);
+    }
+    else{
+      fill(255);
+    }
+}
