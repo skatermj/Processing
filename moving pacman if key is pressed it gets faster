@@ -1,0 +1,21 @@
+int radius=40;
+float x=-radius;
+float speed=0.5;
+void setup() {
+  size(240,120);
+  ellipseMode(RADIUS);
+  frameRate(255);
+}
+void draw() {
+  println(frameRate);
+  background(0);
+  fill(#FEFF00);
+  x+=speed;
+    if(keyPressed){
+      speed += 0.001;
+    }
+  if(x>width+radius){
+    x=-radius;
+  }
+  arc(x,60,radius,radius,radians(28),radians(330));
+}
